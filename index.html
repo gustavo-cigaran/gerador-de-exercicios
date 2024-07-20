@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="/img/programming-icon.webp" type="image/x-icon">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Gerador de Exercícios</title>
+</head>
+<body>
+  <main>
+    <section class="search">
+      <div class="search__box">
+        <p>Quero fazer <input type="number"> exercícios de 
+          <select name="linguagens" id="select-linguagens">
+            <option value="java">Java</option>
+            <option value="javaScript">JavaScript</option>
+            <option value="python">Python</option>
+          </select>
+        </p>
+        <button>Gerar</button>
+      </div>
+    </section>
+    <section>
+      <p id="response"></p>
+    </section>
+  </main>
+  <script type="importmap">
+    {
+      "imports": {
+        "@google/generative-ai": "https://esm.run/@google/generative-ai"
+      }
+    }
+  </script>
+  <script type="module" src="js/main.js"></script>
+  <script type='text/javascript' src="js/config.js"></script>
+</body>
+</html>
